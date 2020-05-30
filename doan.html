@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ĐOÀN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style-sp.css">
+	<link rel="stylesheet" type="text/css" href="css/news.css">
+	<link rel="stylesheet" type="text/css" href="css/doan.css">
+	<!-- animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- font-family -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- animate -->
+	<script src="https://pagecdn.io/lib/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+	<!-- include jQuery + carouFredSel plugin -->
+	<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+	<!-- optionally include helper plugins -->
+	<script type="text/javascript" language="javascript" src="helper-plugins/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" language="javascript" src="helper-plugins/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" language="javascript" src="helper-plugins/jquery.transit.min.js"></script>
+	<script type="text/javascript" language="javascript" src="helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+	
+</head>
+<body>
+	<div class="wrap-line-header wrap-icon-header" id="gohome">	
+		<div class="container">	
+			<div class="line-header bg-blue"></div>
+		</div>
+		<div class="icon-header flexbox row">
+			<ul class="list-icon flexbox">
+	  			<li class="item-icon"><a href="#"><span><i class="fa fa-search text-white"></i></span></a></li>
+	  			<li class="item-icon"><a href="#"><span><i class="fa fa-user text-white"></i></span></a></li>
+	  			<li class="item-icon"><a href="#"><span><i class="fa fa-lock text-white"></i></span></a></li>
+	  			<li class="item-icon"><a href="#"><span><i class="fa fa-globe text-white"></i></span></a></li>
+		  	</ul>
+		</div>	
+	</div>
+	<div class="wrap-logo-sp-pc wrap-logo-sp flexbox flex-center flex-bw row wrap-icon-menu">
+		<div class="logo-img">
+			<img src="image/image-pc/Logo.png" alt="Đại học quốc gia tphcm" width="100%">
+		</div>
+		<div class="wrap-menu">
+			<div class="menu-sp menu-bar menu-bar-sp">
+				<span class="icon-menu"><i class="fa fa-bars"></i></span>
+			</div>
+			<div class="menu-pc">
+				<ul class="flexbox text-uppercase ">
+			        <li class="nav-item active bg-blue">
+			          	<a class="nav-link text-white" href="#">Trang chủ</a>
+			        </li>
+			        <li class="nav-item p-relative" id='dropdown'>
+			          	<a class="nav-link dropdown" href="#">Giới thiệu</a>
+				       	<div class="dropdown-content p-absolute">
+							<div class="flexbox">
+							  	<ul class="left-colum flexbox list-menu-drop">
+							  		<li class="item-drop"><a href="#">GIỚI THIỆU CHUNG</a></li>
+	    							<li class="item-drop" ><a href="#">BAN CHỦ NHIỆM KHOA</a></li>
+	    							<li class="item-drop"><a href="#">HỘI ĐỒNG KHOA HỌC & ĐÀO TẠO</a></li>
+							  	</ul>
+							  	<ul class="right-colum flexbox list-menu-drop">
+							  		<li class="item-drop"><a href="#">CƠ CẤU TỔ CHỨC</a></li>
+	    							<li class="item-drop"><a href="#">THÔNG ĐIỆP CỦA TRƯỞNG KHOA</a></li>
+	    							<li class="item-drop"><a href="#">PHÒNG BAN – BỘ MÔN</a></li>
+							  	</ul>
+						  	</div>
+					  	</div>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">tin tức</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">pbl</a>
+			        </li>
+			         <li class="nav-item">
+			          <a class="nav-link" href="#">quan hệ quốc tế</a>
+			        </li>
+			         <li class="nav-item">
+			          <a class="nav-link" href="#">đoàn tn</a>
+			        </li>
+			         <li class="nav-item">
+			          <a class="nav-link" href="#">tuyển sinh 2019</a>
+			        </li>
+			    </ul>
+			</div>	
+		</div>
+	</div>
+	<div class="wrap-open-menu sp">
+		<div class="sidepanel upercase" id="menu-header-bar">
+	  		<a href="javascript:void(0)" class="closebtn">×</a>
+	  		<a href="#">trang chủ</a>
+	  		<a href="#">giới thiệu</a>
+	  		<a href="#">tin tức</a>
+	  		<a href="#">pbl</a>
+	  		<a href="#">quan hệ quốc tế</a>
+	  		<a href="#">Đoàn thanh niên</a>
+	  		<a href="#">tuyển sinh</a>
+		</div>	
+	</div>
+	<div class="wrap-bg-blue">
+		<div class="wrap-banner">	
+			<div class="wrap-banner-sp wrap-banner-medvnu">
+				<div class="wrap-slider">
+					<div class="slideshow-container">
+						<div class="mySlides fade slide-sp">
+						  <div class="numbertext">1 / 3</div>
+						  	<img src="image/image-pc/ky-niem.jpg">
+						  <div class="text"><div class="">KỶ NIỆM 10 NĂM THÀNH LẬP KHOA Y</div></div>
+						</div>
+						<div class="mySlides fade slide-sp">
+						  <div class="numbertext">2 / 3</div>
+						  	<img src="image/image-pc/tiep-suc.jpg">
+						  <div class="text"><div class="">CUỘC THI HOẠT ĐỘNG TĂNG CƯỜNG SỨC KHỎE DÀNH CHO SINH  VIÊN</div></div>
+						</div>
+						<div class="mySlides fade slide-sp">
+						  <div class="numbertext">3 / 3</div>
+						  	<img src="image/image-pc/tuyen-sinh.jpg">
+						  <div class="text"><div class="">TUYỂN SINH NĂM 2019</div></div>
+						</div>
+						<div class="mySlides fade slide-sp">
+						  <div class="numbertext">3 / 3</div>
+						  	<img src="image/image-pc/hoi-nghi.png">
+						  <div class="text"><div class="">HỘI NGHỊ TRIỂN KHAI NĂM HỌC 2019 - 2020</div></div>
+						</div>
+						<div class="mySlides fade slide-sp">
+						  <div class="numbertext">3 / 3</div>
+						  	<img src="image/image-pc/school.png">
+						  <div class="text"><div class="">SCHOOL OF MEDICINE</div></div>
+						</div>
+						<div class="mySlides fade slide-sp">
+						  	<div class="numbertext">3 / 3</div>
+						  		<img src="image/image-pc/sang-tao.png">
+						  	<div class="text"><div class="">NĂNG ĐỘNG VÀ SÁNG TẠO</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrap-banner-pc wrap-banner-medvnu">
+				<div class="row mb-50">
+					<div class="wrap-slider img-thumbnail">
+						<div class="slideshow-container">
+							<div class="mySlides fade slide-pc">
+							  <div class="numbertext">1 / 3</div>
+							  	<img src="image/image-pc/ky-niem.jpg">
+							  <div class="text"><div class=" wow slideInLeft animated delay-2s">KỶ NIỆM 10 NĂM THÀNH LẬP KHOA Y</div></div>
+							</div>
+							<div class="mySlides fade slide-pc">
+							  <div class="numbertext">2 / 3</div>
+							  	<img src="image/image-pc/tiep-suc.jpg">
+							  <div class="text"><div class=" wow slideInLeft animated delay-2s">CUỘC THI HOẠT ĐỘNG TĂNG CƯỜNG SỨC KHỎE DÀNH CHO SINH  VIÊN</div></div>
+							</div>
+							<div class="mySlides fade slide-pc">
+							  <div class="numbertext">3 / 3</div>
+							  	<img src="image/image-pc/tuyen-sinh.jpg">
+							  <div class="text"><div class=" wow slideInLeft animated delay-2s">TUYỂN SINH NĂM 2019</div></div>
+							</div>
+							<div class="mySlides fade slide-pc">
+							  <div class="numbertext">3 / 3</div>
+							  	<img src="image/image-pc/hoi-nghi.png">
+							  <div class="text"><div class=" wow slideInLeft animated delay-2s">HỘI NGHỊ TRIỂN KHAI NĂM HỌC 2019 - 2020</div></div>
+							</div>
+							<div class="mySlides fade slide-pc">
+							  <div class="numbertext">3 / 3</div>
+							  	<img src="image/image-pc/school.png">
+							  <div class="text"><div class=" wow slideInLeft animated delay-2s ">SCHOOL OF MEDICINE</div></div>
+							</div>
+							<div class="mySlides fade slide-pc">
+							  	<div class="numbertext">3 / 3</div>
+							  		<img src="image/image-pc/sang-tao.png">
+							  	<div class="text"><div class=" wow slideInLeft animated delay-2s">NĂNG ĐỘNG VÀ SÁNG TẠO</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-section">
+			<!-- pc -->
+			<div class="row section-pc flexbox flexbox-pc">
+				<div class="container bg-white border width-section-pc width-lg">
+					<div class="line-hr"></div>
+					<div class="wrap-content-pc flexbox">
+						<div class="wrap-content-left">
+							<div class="tintuc">
+								<div class="new-tin-tuc new flexbox">
+									<div class="new-title text-uppercase">Bản tin đoàn thành niên</div>	
+									<div class ="icon-plus"><i class="fa fa-plus"></i></div>
+								</div>
+								<div class="hot-title">
+									<div class="title-h1 text-uppercase">Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+									<div class="line-hr line-hr-sm"></div>
+									<p class="time">AUG 29, 2019</p>
+									<div class="des-new clearfix">
+										<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+										<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione blanditiis nulla earum dignisleniti sapiente aliquam numquam, erspiciatis, molestiae. Error sequi, possimus, molestias corrupti fuga obcaecati eum libero qui suscipit harum dolorum. Quidem itaque voluptatum alias ut animi qui ab sint, earum obcaecati similique sit, ipsum nostrum vero magni repellendus? Excepturi consequatur ducimus, consequuntur provident dicta, impedit accusamus?<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200</span></p>
+									</div>
+									<button onclick="myFunctionPC(this)" class="myBtn">Read more...</button>
+								</div>
+								<div class="hot-title">
+									<div class="title-h1 text-uppercase">Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+									<div class="line-hr line-hr-sm"></div>
+									<p class="time">AUG 29, 2019</p>
+									<div class="des-new clearfix">
+										<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+										<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas ti eum libero qui suscipit harum dolorum. Quidem itaque voluptatum alias ut animi qui ab sint, earum obcaecati similique sit, ipsum nostrum vero magni repellendus? Excepturi consequatur ducimus, consequuntur provident dicta, impedit accusamus?<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200</span></p>
+									</div>
+									<button onclick="myFunctionPC(this)" class="myBtn">Read more...</button>
+								</div>
+								<div class="hot-title">
+									<div class="title-h1 text-uppercase">Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+									<div class="line-hr line-hr-sm"></div>
+									<p class="time">AUG 29, 2019</p>
+									<div class="des-new clearfix">
+										<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+										<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorbcaecati eum libero qui suscipit harum dolorum. Quidem itaque voluptatum alias ut animi qui ab sint, earum obcaecati similique sit, ipsum nostrum vero magni repellendus? Excepturi consequatur ducimus, consequuntur provident dicta, impedit accusamus?<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200</span></p>
+									</div>
+									<button onclick="myFunctionPC(this)" class="myBtn">Read more...</button>
+								</div>
+								<div class="hot-title">
+									<div class="title-h1 text-uppercase">Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+									<div class="line-hr line-hr-sm"></div>
+									<p class="time">AUG 29, 2019</p>
+									<div class="des-new clearfix">
+										<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+										<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelique sit, ipsum nostrum vero magni repellendus? Excepturi consequatur ducimus, consequuntur provident dicta, impedit accusamus?<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200<br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.lorem200</span></p>
+									</div>
+									<button onclick="myFunctionPC(this)" class="myBtn">Read more...</button>
+								</div>
+								<div class="pagination">
+								  	<a href="#">&laquo;</a>
+									<a href="#">1</a>
+									<a href="#" class="active">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">&raquo;</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrap-content-right">
+							<div class="content-right-width">
+								<input type="text" name="" placeholder="Tìm kiếm bài tin ...." class="input-search">
+								<div class="wrap-image-sv flexbox mb-30">
+									<a href="#" class="img-thumbnail text-center">
+										<img src="image/image-sp/for-sv.png" alt="" width="100%">
+										<p><span class="text text-uppercase">Dành cho sinh viên</span></p>
+									</a>
+								</div>
+								<div class="line-hr right-line"></div>
+								<div class="line-lg"></div>
+								<div class="bt-current-student">
+									<div class="bt-sv text-uppercase">Sinh viên hiện tại <span class="underline">CLICK HEAR</span></div>
+								</div>
+								<div class="wrap-slide-text-imge">
+									<div class="slide-image-textv img-thumbnail" id="slideshow">
+										<div class="fexbox slide-image-text-1 ">
+											<div class="wrap-img-des">
+												<img src="image/image-sp/ha.jpg" width="100%" class="des">
+											</div>
+											<div class="des-text row">Được sống và học tập trong một môi trường mới, năng động, tích cực, thân thiện nhưng cũng đầy thách thức như ở Khoa Y – ĐHQG TP.HCM chính là động lực để tôi phấn đấu. Nỗ lực hết mình để đạt được mục tiêu của bản thân, trở thành người thầy thuốc hết lòng phục vụ cho nhân dân, cống hiến cho đất nước là đích đến cuối cùng của tôi.</div>
+											<p class="flexbox flex-end">Văn Đặng Hữu Đức – Y2011</p>
+										</div>
+										<div class="line-hr mt-30"></div>
+										<div class="fexbox slide-image-text-1">
+											<div class="wrap-img-des">
+												<img src="image/image-sp/phuc.jpg" width="100%" class="des">
+											</div>
+											<div class="des-text row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, nobis corporis nesciunt numquam repellat accusamus sequi magni quaerat quo aliquid porro nisi consequatur quidem illo placeat dolore velit, fuga aliquam amet quae iste labore voluptas consectetur modi. Nisi quasi ndis repellendus nam magni. Vero impedit explicabo vitae quisquam, dolorem soluta. Quia itaque praesentium maiores qui ratione tenetur.</div>
+											<p class="flexbox flex-end">Văn Đặng Hữu Đức – Y2011</p>
+										</div>
+										<div class="line-hr mt-30"></div>
+										<div class="fexbox slide-image-text-1">
+											<div class="wrap-img-des">
+												<img src="image/image-sp/thanh.gif" width="100%" class="des">
+											</div>
+											<div class="des-text row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, nobis corporis nesciunt numquam repellat accusamus sequi magni quaerat quo aliquid porro nisi consequatur quidem illo placeat dolore velit, fuga aliquam amet quae iste labore voluptas consectetur modi. Nisi quasi ndis repellendus nam magni. Vero impedit explicabo vitae quisquam, dolorem soluta. Quia itaque praesentium maiores qui ratione tenetur.</div>
+											<p class="flexbox flex-end">Văn Đặng Hữu Đức – Y2011</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="title-event flexbox"><h2 class="upercase">Hình ảnh sự kiện</h2><span class="sm-text">Xem thêm</span></div>	
+						<div class="list_carousel flexbox responsive" >
+							<ul id="foo5" class="flexbox item-carousel">
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi2.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi4.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tamsoatsk1.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay1.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay3.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi4.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay3.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi2.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay1.jpg" width='100%'></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			<!-- sp -->
+				
+				<div class="wrap-services p-relative width-section-pc width-sm">
+					<div class="bg-services mt-30">
+						<div class="wap-des-ser flexbox flex-sp">
+							<div class="wap-content-ser flexbox flex-sp row-sp text-white">
+								<div class="bg-icon-red flexbox"><img src="image/image-sp/g-t.png" alt="" width="100%"></div>
+								<span class="color-white text-h3">GIỚI THIỆU</span>
+								<p class="color-white l-height">Khoa Y ĐHQG-HCM là đơn vị đào tạo tiên tiến, chất lượng cao dựa trên mô hình Trường – Bệnh viện, kết hợp chặt chẽ giữa đào tạo với nghiên cứu khoa học và cung cấp dịch vụ chăm sóc sức khoẻ.</p>
+							</div>
+							<div class="wap-content-ser flexbox flex-sp row-sp xd text-white">
+								<div class="bg-icon-red flexbox"><img src="image/image-sp/su-menh.jpg" alt="" width="100%"></div>
+								<span class="color-white text-h3 text-center">SỨ MỆNH</span>
+								<p class="color-white l-height">Đào tạo nguồn nhân lực ngành Y ở trình độ ĐH và SĐH.<br>Nghiên cứu khoa học và ứng dụng các thành quả nghiên cứu vào đào tạo.<br>Khám chữa bệnh nhằm đáp ứng nhu cầu chăm sóc và bảo vệ sức khỏe cho nhân dân khu vực miền Nam và cả nước.</p>
+							</div>
+							<div class="wap-content-ser flexbox flex-sp row-sp dn text-white">
+								<div class="bg-icon-red flexbox"><img src="image/image-sp/tam-nhin.jpg" alt="" width="100%"></div>
+								<span class="color-white text-h3 text-center">TẦM NHÌN</span>
+								<p class="color-white l-height">Khoa Y hướng đến xây dựng một Đại học Khoa học sức khoẻ trong tốp đầu Châu Á, là nơi hội tụ của khoa học y học, công nghệ, văn hoá, tri thức và y đức của người Việt Nam.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row section-sp">
+				<div class="container bg-white border">
+					<div class="line-hr mt-30"></div>
+					<div class="tuyen-sinh flex-column mb-30">
+						<div class="left-ts row">
+							<a href="#" class="tuyen-sinh-link"><span>Tuyển sinh năm 2019: Y khoa, Dược học, Răng Hàm Mặt.</span></a>
+							<p>Khoa Y thông báo các thông tin dự kiến tuyển sinh trong năm 2019.<p>
+							<p><span class="tuyen-sinh-link-sm tuyen-sinh-link"><i class="fa fa-hand-o-right"></i> Xem thêm</span></p>
+						</div>
+						<div class="right-ts youtube">
+							<iframe width="100%" height="auto" src="https://www.youtube.com/embed/tmIwM3ztyOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="line-hr mt-30"></div>
+					<input type="text" name="" placeholder="Tìm kiếm bài tin ...." class="input-search">
+					<div class="wrap-new">
+						<div class="row">
+							<div class="title-port title">
+								<span class="text-bt">Đoàn thanh niên</span><br>
+								<span class="text-gt text-uppercase">Đoàn thanh niên</span>
+								<div class="line-red flexbox">
+								<div class="line-r-l"></div>
+								<div class="line-md"></div>
+								<div class="line-r-l"></div>
+							</div>
+							<div class="hot-title">
+								<div class="title-h1 text-uppercase"> Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+								<div class="line-hr line-hr-sm"></div>
+								<p class="time">AUG 29, 2019</p>
+								<div class="des-new flexbox des-new-text-sp">
+									<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+									<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+									<button onclick="myFunctionSP(this)" class="myBtn">Read more...</button>
+								</div>
+							</div>
+							<div class="hot-title">
+								<div class="title-h1 text-uppercase">Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+								<div class="line-hr line-hr-sm"></div>
+								<p class="time">AUG 29, 2019</p>
+								<div class="des-new flexbox  des-new-text-sp" id="">
+									<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+									<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+									<button onclick="myFunctionSP(this)" class="myBtn">Read more</button>
+								</div>
+							</div>
+							<div class="hot-title">
+								<div class="title-h1 text-uppercase">Đặc sắc Khoa Y tại Hội diễn văn nghệ Công đoàn ĐHQG TPHCM 2019</div>
+								<div class="line-hr line-hr-sm"></div>
+								<p class="time">AUG 29, 2019</p>
+								<div class="des-new flexbox  des-new-text-sp">
+									<div class="des-new-img width-des-new"><img src="image/image-pc/tiepsucmuathi2.jpg" alt="" width="100%"></div>
+									<p class="des-new-sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dots">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+									<button onclick="myFunctionSP(this)" class="myBtn">Read more</button>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="wrap-pagination flexbox">
+						<div class="pagination">
+						  	<a href="#">&laquo;</a>
+							<a href="#">1</a>
+							<a href="#" class="active">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#">&raquo;</a>
+						</div>
+					</div>
+					<div class="line-hr mt-30"></div>
+					<div class="wrap-image-sv flexbox mb-30">
+						<a href="#" class="img-thumbnail text-center">
+							<img src="image/image-sp/for-sv.png" alt="" width="100%">
+							<p><span class="text text-uppercase">Dành cho sinh viên</span></p>
+						</a>
+					</div>
+					<div class="bt-current-student row">
+						<div class="bt-sv text-uppercase">Sinh viên hiện tại <span class="underline">CLICK HEAR</span></div>
+					</div>
+					<div class="wrap-slide-text-imge row">
+						<div class="slide-image-textv img-thumbnail" id="slideshow">
+							<div class="fexbox slide-image-text-1 ">
+								<div class="wrap-img-des">
+									<img src="image/image-sp/ha.jpg" width="100%" class="des">
+								</div>
+								<div class="des-text row">Được sống và học tập trong một môi trường mới, năng động, tích cực, thân thiện nhưng cũng đầy thách thức như ở Khoa Y – ĐHQG TP.HCM chính là động lực để tôi phấn đấu. Nỗ lực hết mình để đạt được mục tiêu của bản thân, trở thành người thầy thuốc hết lòng phục vụ cho nhân dân, cống hiến cho đất nước là đích đến cuối cùng của tôi.</div>
+								<p class="flexbox flex-end">Văn Đặng Hữu Đức – Y2011</p>
+							</div>
+							<div class="line-hr mt-30"></div>
+							<div class="fexbox slide-image-text-1">
+								<div class="wrap-img-des">
+									<img src="image/image-sp/phuc.jpg" width="100%" class="des">
+								</div>
+								<div class="des-text row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, nobis corporis nesciunt numquam repellat accusamus sequi magni quaerat quo aliquid porro nisi consequatur quidem illo placeat dolore velit, fuga aliquam amet quae iste labore voluptas consectetur modi. Nisi quasi ndis repellendus nam magni. Vero impedit explicabo vitae quisquam, dolorem soluta. Quia itaque praesentium maiores qui ratione tenetur.</div>
+								<p class="flexbox flex-end">Văn Đặng Hữu Đức – Y2011</p>
+							</div>
+							<div class="line-hr mt-30"></div>
+							<div class="fexbox slide-image-text-1">
+								<div class="wrap-img-des">
+									<img src="image/image-sp/thanh.gif" width="100%" class="des">
+								</div>
+								<div class="des-text row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, nobis corporis nesciunt numquam repellat accusamus sequi magni quaerat quo aliquid porro nisi consequatur quidem illo placeat dolore velit, fuga aliquam amet quae iste labore voluptas consectetur modi. Nisi quasi ndis repellendus nam magni. Vero impedit explicabo vitae quisquam, dolorem soluta. Quia itaque praesentium maiores qui ratione tenetur.</div>
+								<p class="flexbox flex-end">Văn Đặng Hữu Đức – Y2011</p>
+							</div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="title-event flexbox"><h2 class="upercase">Hình ảnh sự kiện</h2><span class="sm-text">Xem thêm</span>
+						</div>	
+						<div class="list_carousel flexbox responsive" >
+							<ul id="foo5-sp" class="flexbox item-carousel">
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi2.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi4.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tamsoatsk1.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay1.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay3.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi4.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay3.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/tiepsucmuathi2.jpg" width='100%'></li>
+								<li class="img-carousel"><img src="image/image-pc/mhxtrongcay1.jpg" width='100%'></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="line-hr mb-30"></div>
+				</div>
+				<div class="wrap-services p-relative">
+					<div class="bg-services mt-30">
+						<div class="title-ser title row-sp">
+							<span class="text-bt text-uppercase">introduction</span><br>
+							<span class="text-gt text-uppercase">Khoa y đại học quốc gia tp.hcm</span>
+							<div class="line-red flexbox center">
+								<div class="line-r-l"></div>
+								<div class="line-md"></div>
+								<div class="line-r-l"></div>
+							</div>
+						</div>
+						<div class="wap-des-ser flexbox flex-sp">
+							<div class="wap-content-ser flexbox flex-sp row-sp text-white">
+								<div class="bg-icon-red flexbox"><img src="image/image-sp/g-t.png" alt="" width="100%"></div>
+								<span class="color-white text-h3">GIỚI THIỆU</span>
+								<p class="color-white l-height">Khoa Y ĐHQG-HCM là đơn vị đào tạo tiên tiến, chất lượng cao dựa trên mô hình Trường – Bệnh viện, kết hợp chặt chẽ giữa đào tạo với nghiên cứu khoa học và cung cấp dịch vụ chăm sóc sức khoẻ.</p>
+							</div>
+							<div class="wap-content-ser flexbox flex-sp row-sp xd text-white">
+								<div class="bg-icon-red flexbox"><img src="image/image-sp/su-menh.jpg" alt="" width="100%"></div>
+								<span class="color-white text-h3 text-center">SỨ MỆNH</span>
+								<p class="color-white l-height">Đào tạo nguồn nhân lực ngành Y ở trình độ ĐH và SĐH.<br>Nghiên cứu khoa học và ứng dụng các thành quả nghiên cứu vào đào tạo.<br>Khám chữa bệnh nhằm đáp ứng nhu cầu chăm sóc và bảo vệ sức khỏe cho nhân dân khu vực miền Nam và cả nước.</p>
+							</div>
+							<div class="wap-content-ser flexbox flex-sp row-sp dn text-white">
+								<div class="bg-icon-red flexbox"><img src="image/image-sp/tam-nhin.jpg" alt="" width="100%"></div>
+								<span class="color-white text-h3 text-center">TẦM NHÌN</span>
+								<p class="color-white l-height">Khoa Y hướng đến xây dựng một Đại học Khoa học sức khoẻ trong tốp đầu Châu Á, là nơi hội tụ của khoa học y học, công nghệ, văn hoá, tri thức và y đức của người Việt Nam.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-footer bg-blue row wrap-footer-sp">
+			<div class="wrap-sp-ad-if flexbox">	
+				<div class="flexbox flex-column width-50">
+					<div class="add-footer pd">
+						<div class="title-ft">
+							<span class="text f-style">Phát biểu</span>
+							<div class="line-ft flexbox">
+								<div class="left-yello"></div>
+								<div class="right-yello"></div>
+							</div>
+						</div>
+						<div class="footer-text wrap-banner-text">
+							<div class="text-banner-infor p-relative" id="textslideAuto">
+								<div id="textslideFooter" class="p-absolute text"><span>"Đề cao tính độc lập, sáng tạo trong nghiên cứu khoa học."</span></div>
+							</div>
+						</div>
+					</div>	
+					<div class="add-footer pd">
+						<div class="title-ft">
+							<span class="text f-style">Địa chỉ</span>
+							<div class="line-ft flexbox">
+								<div class="left-yello"></div>
+								<div class="right-yello"></div>
+							</div>
+						</div>
+						<div class="des-add">
+							<span class="f-style">School of Medicine</span>
+							<div class="des-add-br f-style">
+								<span>Nhà Điều hành ĐHQG TP.HCM, P. Linh Trung, Q. Thủ Đức, TP.HCM. </span><br><br>
+								<span>ĐT: 08-37242160 – ext. 3111</span><br><br>
+								<span>Fax: 08-37242188</span><br><br>
+								<span>Gửi thông điệp: <a href=	"#" class="text-white underline link-form">Tại đây</a></span><br>
+							</div>
+						</div>
+					</div>
+					<div class="info-footer pd">
+						<div class="title-ft">
+							<span class="text f-style">Truy cập nhanh</span>
+							<div class="line-ft flexbox">
+								<div class="left-yello"></div>
+								<div class="right-yello"></div>
+							</div>
+						</div>
+						<ul class="list-ft">
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Tải bài giảng</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Thực tập lâm sàng</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Hỏi đáp tuyển sinh</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Câu hỏi thường gặp</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Tin nổi bật</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Phong cách SV y khoa</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Tin nổi bật</a>
+							</li>
+							<li class="item-ft">
+								<div class="line-hr line-hr-sm mt-30 mb-30"></div>
+								<a href="" class="f-style" style="font-size: 18px">Liên kết</a>
+							</li>
+							<li class="item-ft flexbox">
+								<select name="carlist" form="carform" class="select-option">
+								  <option value="volvo">Các Trường, Viện</option>
+								  <option value="saab">&nbsp;&nbsp;Trường ĐH Bách khoa</option>
+								  <option value="opel">&nbsp;&nbsp;Trường ĐH KHTN</option>
+								  <option value="audi">&nbsp;&nbsp;Trường ĐH KHXH & NV</option>
+								  <option value="saab">&nbsp;&nbsp;Trường ĐH Công nghệ Thông tin </option>
+								  <option value="saab">&nbsp;&nbsp;Viện MT-TN</option>
+								  <option value="saab">&nbsp;&nbsp;Trường ĐH Kinh tế - Luật</option>
+								  <option value="saab">&nbsp;&nbsp;Trường PT Năng Khiếu</option>
+								  <option value="saab">Các Trung tâm</option>
+								  <option value="saab">&nbsp;&nbsp;Khu CN Phần mềm</option>
+								  <option value="saab">&nbsp;&nbsp;Thư viện Trung tâm</option>
+								  <option value="saab">&nbsp;&nbsp;Trung tâm PT CNTT</option>
+								  <option value="saab">&nbsp;&nbsp;Trung tâm ĐT Quốc tế </option>
+								  <option value="saab">&nbsp;&nbsp;Trung tâm ngoại ngữ</option>
+								  <option value="saab">&nbsp;&nbsp;Trung Tâm Khảo Thí</option>
+								  <option value="saab">&nbsp;&nbsp;Trung tâm GD Quốc Phòng</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+					<div class="info-footer pd doi-tac">
+						<div class="title-ft dt">
+							<span class="text f-style">Đối tác</span>
+							<div class="line-ft flexbox">
+								<div class="left-yello"></div>
+								<div class="right-yello"></div>
+							</div>
+						</div>
+						<button class="click-dt">Click Here</button>
+						<ul class="list-ft list-dt">
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Từ Dũ</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Bình Dân</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Tâm Thần</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Nhi Đồng 1</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Thống Nhất</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Mắt TP.HCM</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Nhân Dân 115/a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Da liễu</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Liên</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Phạm Ngọc Thạch</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Tai Mũi Họng TP.HCM</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">BV Răng Hàm Mặt TP.HCM</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">BV Bệnh Nhiệt Đới TP.HCM</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Truyền Máu và Huyết Học</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện NguyễnTri Phương</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Y học cổ truyền</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Quận Thủ Đức</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Đa khoa khu vực Thủ Đức</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Bệnh viện Hoàn Mỹ</a>
+							</li>
+							<li class="item-ft flexbox">
+								<span class="ic-arrow"><i class="right"></i></span>
+								<a href="" class="f-style">Viện Pasteur TP.HCM</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="line-hr line-hr-sm mt- mb-30"></div>
+			<div class="copyright flexbox copyright-sp">
+				<ul class="icon-social flexbox">
+					<li class="icon-border"><a href="#" class="fa fa-facebook"></a></li>
+					<li class="icon-border"><a href="#" class="fa fa-youtube"></a></a></li>
+					<li class="icon-border"><a href="#" class="fa fa-twitter"></a></li>
+					<li class="icon-border"><a href="#" class="fa fa-rss"></a></li>
+				</ul>
+				<div class="text-copyright">
+					<span class="text-white">© 2013-2014 Khoa Y ĐHQG TPHCM. Phát triển bởi Nguyễn Tuấn Kiệt - Nguyễn Dũng Trí.</span>
+				</div>
+			</div>
+			<div class="copyright flexbox copyright-pc">
+				<div class="text-copyright">
+					<span class="text-white">© 2013-2014 Khoa Y ĐHQG TPHCM. Phát triển bởi Nguyễn Tuấn Kiệt - Nguyễn Dũng Trí.</span>
+				</div>
+				<ul class="icon-social flexbox">
+					<li class="icon-border"><a href="#" class="fa fa-facebook"></a></li>
+					<li class="icon-border"><a href="#" class="fa fa-youtube"></a></a></li>
+					<li class="icon-border"><a href="#" class="fa fa-twitter"></a></li>
+					<li class="icon-border"><a href="#" class="fa fa-rss"></a></li>
+				</ul>
+			</div>
+			<div class="line-hr mt-30"></div>
+		</div>
+		<div class="wrap-chat wrap-bg-home" onclick="openForm()">
+			<div class="bg-gohome bg-chat"></div>
+			<div class="icon-gohome icon-chat"><i class="fa fa-comments"></i></i></div>
+		</div>
+		<div onclick="GoToHomePage()" class="wrap-bg-home">
+			<dive class="bg-gohome"></dive>
+			<div class="icon-gohome"><i class="fa fa-home"></i></div>
+		</div>
+		<!-- chatform -->
+		<div class="chat-popup" id="myForm">
+		  <form action="/action_page.php" class="form-container">
+		    <h1 class="title-form">Nhắn Tin cho chúng tôi</h1>
+
+		    <label for="msg"><b>Message</b></label>
+		    <textarea placeholder="Type message.." name="msg" required></textarea>
+			<div class="two-button">
+				<button type="submit" class="btn send">Send</button>
+		    	<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</div>
+		  </form>
+		</div>
+	</div>
+</div>
+	<script language="javascript" src="js/wow.js"></script>
+	<script language="javascript" src="js/open-menu-sp.js"></script>
+	<script language="javascript" src="js/slider-pc.js"></script>
+	<script language="javascript" src="js/slider-sp.js"></script>
+	<script language="javascript" src="js/text-slide.js"></script>
+	<script language="javascript" src="js/new-click.js"></script>
+	<script language="javascript" src="js/click-info-sv.js"></script>
+	<script language="javascript" src="js/footer-text.js"></script>
+	<script language="javascript" src="js/bannertext-foter.js"></script>
+	<script language="javascript" src="js/hover-menu.js"></script>
+	<script language="javascript" src="js/carousel.js"></script>
+	<script language="javascript" src="js/carousel-sp.js"></script>
+	<script language="javascript" src="js/des-show-hied-sp.js"></script>
+	<script language="javascript" src="js/des-show-hide-pc.js"></script>
+	<script language="javascript" src="js/gohome.js"></script>
+	<script language="javascript" src="js/chat-form.js"></script>
+	
+</body>
