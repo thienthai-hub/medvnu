@@ -1,0 +1,5 @@
+@media screen and (min-width: 1200px) {
+	.new-tin-tuc .new-title {
+		flex-basis: 75%;
+	}
+}

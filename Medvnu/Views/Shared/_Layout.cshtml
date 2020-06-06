@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="@Url.Content("~/Content/css/news.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/gioithieuchung.css")" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/loginPup.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/css/qhqt.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/news.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/style-sp.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("https://fonts.googleapis.com/css?family=Roboto&display=swap")" rel="stylesheet" type="text/css" />
+
+    <script src="@Url.Content("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("https://pagecdn.io/lib/wow/1.1.2/wow.min.js")" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script src="@Url.Content("http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scriptjs/jquery.carouFredSel-6.2.1-packed.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Script/helper-plugins/jquery.mousewheel.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Script/helper-plugins/jquery.touchSwipe.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Script/helper-plugins/jquery.transit.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Script/helper-plugins/jquery.ba-throttle-debounce.min.js")" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="wrap-line-header wrap-icon-header" id="gohome">
+        <div class="container">
+            <div class="line-header bg-blue"></div>
+        </div>
+        <div class="icon-header flexbox row">
+            <ul class="list-icon flexbox">
+                <li class="item-icon"><a href="#"><span><i class="fa fa-search text-white"></i></span></a></li>
+                <li class="item-icon"><a href="#"><span><i class="fa fa-user text-white"></i></span></a></li>
+                <li class="item-icon" id="login-pup">
+                    <a href="#">
+                        <span><i class="fa fa-lock text-white"></i></span>
+                    </a>
+                    <div class="wrap-bg-log">
+                        <div id="login-box" class="wrap-log-pup">
+                            <div class="left">
+                                <h1>Sign up</h1>
+
+                                <input type="text" name="username" placeholder="Username">
+                                <input type="text" name="email" placeholder="E-mail">
+                                <input type="password" name="password" placeholder="Password">
+
+                                <input type="submit" name="signup_submit" value="Sign me up">
+                            </div>
+
+                            <div class="right">
+                                <span class="loginwith">Sign in with<br>social network</span>
+
+                                <button class="social-signin facebook">Log in with facebook</button>
+                                <button class="social-signin twitter">Log in with Twitter</button>
+                                <button class="social-signin google">Log in with Google+</button>
+                            </div>
+                            <div class="or">x</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="item-icon"><a href="#"><span><i class="fa fa-globe text-white"></i></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-logo-sp-pc wrap-logo-sp flexbox flex-center flex-bw row wrap-icon-menu">
+        <div class="logo-img">
+            <img src="~/Content/image/image-pc/Logo.png" alt="Đại học quốc gia tphcm" style="width:100%">
+        </div>
+        <div class="wrap-menu">
+            <div class="menu-sp menu-bar menu-bar-sp">
+                <span class="icon-menu"><i class="fa fa-bars"></i></span>
+            </div>
+            <div class="menu-pc">
+                <ul class="flexbox text-uppercase ">
+                    <li class="nav-item active bg-blue">
+                        <div class="nav-link text-white">@Html.ActionLink("Trang chủ", "TrangChu", "Medvnu")</div>
+                    </li>
+                    <li class="nav-item p-relative" id='dropdown'>
+                        <a class="nav-link dropdown" href="#">Giới Thiệu</a>
+                        <div class="dropdown-content p-absolute">
+                            <div class="flexbox">
+                                <ul class="left-colum flexbox list-menu-drop">
+                                    <li class="item-drop"><a href="#">GIỚI THIỆU CHUNG</a></li>
+                                    <li class="item-drop"><a href="#">BAN CHỦ NHIỆM KHOA</a></li>
+                                    <li class="item-drop"><a href="#">HỘI ĐỒNG KHOA HỌC & ĐÀO TẠO</a></li>
+                                </ul>
+                                <ul class="right-colum flexbox list-menu-drop">
+                                    <li class="item-drop"><a href="#">CƠ CẤU TỔ CHỨC</a></li>
+                                    <li class="item-drop"><a href="#">THÔNG ĐIỆP CỦA TRƯỞNG KHOA</a></li>
+                                    <li class="item-drop"><a href="#">PHÒNG BAN – BỘ MÔN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">@Html.ActionLink("Tin Tức", "TinTuc", "Medvnu")</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">@Html.ActionLink("Pbl", "Pbl", "Medvnu")</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">@Html.ActionLink("Quan Hệ Quốc Tế", "Qhqt", "Medvnu")</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">@Html.ActionLink("Đoàn Thanh niên", "DoanThanhNien", "Medvnu")</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">@Html.ActionLink("Tuyển Sinh 2019", "TuyenSinh", "Medvnu")</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-open-menu sp">
+        <div class="sidepanel upercase" id="menu-header-bar">
+            <div href="javascript:void(0)" class="closebtn">×</div>
+            <div class="link-sp">@Html.ActionLink("Trang chủ", "TrangChu", "Medvnu")</div>
+            <div class="link-sp">giới thiệu</div>
+            <div class="link-sp">@Html.ActionLink("Tin Tức", "TinTuc", "Medvnu")</div>
+            <div class="link-sp">@Html.ActionLink("Pbl", "Pbl", "Medvnu")</div>
+            <div class="link-sp">@Html.ActionLink("Quan Hệ Quốc Tế", "Qhqt", "Medvnu")</div>
+            <div class="link-sp">@Html.ActionLink("Đoàn Thanh niên", "DoanThanhNien", "Medvnu")</div>
+            <div class="link-sp">@Html.ActionLink("Tuyển Sinh 2019", "TuyenSinh", "Medvnu")</div>
+        </div>
+    </div>
+    <div class="wrap-bg-blue">
+        <div class="wrap-banner">
+            <div class="wrap-banner-sp wrap-banner-medvnu">
+                <div class="wrap-slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade slide-sp">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="~/Content/image/image-pc/ky-niem.jpg">
+                            <div class="text"><div class="">KỶ NIỆM 10 NĂM THÀNH LẬP KHOA Y</div></div>
+                        </div>
+                        <div class="mySlides fade slide-sp">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="~/Content/image/image-pc/tiep-suc.jpg">
+                            <div class="text"><div class="">CUỘC THI HOẠT ĐỘNG TĂNG CƯỜNG SỨC KHỎE DÀNH CHO SINH  VIÊN</div></div>
+                        </div>
+                        <div class="mySlides fade slide-sp">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="~/Content/image/image-pc/tuyen-sinh.jpg">
+                            <div class="text"><div class="">TUYỂN SINH NĂM 2019</div></div>
+                        </div>
+                        <div class="mySlides fade slide-sp">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="~/Content/image/image-pc/hoi-nghi.png">
+                            <div class="text"><div class="">HỘI NGHỊ TRIỂN KHAI NĂM HỌC 2019 - 2020</div></div>
+                        </div>
+                        <div class="mySlides fade slide-sp">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="~/Content/image/image-pc/school.png">
+                            <div class="text"><div class="">SCHOOL OF MEDICINE</div></div>
+                        </div>
+                        <div class="mySlides fade slide-sp">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="~/Content/image/image-pc/sang-tao.png">
+                            <div class="text"><div class="">NĂNG ĐỘNG VÀ SÁNG TẠO</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-banner-pc wrap-banner-medvnu">
+                <div class="row mb-50">
+                    <div class="wrap-slider img-thumbnail">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade slide-pc">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="~/Content/image/image-pc/ky-niem.jpg">
+                                <div class="text"><div class=" wow slideInLeft animated delay-2s">KỶ NIỆM 10 NĂM THÀNH LẬP KHOA Y</div></div>
+                            </div>
+                            <div class="mySlides fade slide-pc">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="~/Content/image/image-pc/tiep-suc.jpg">
+                                <div class="text"><div class=" wow slideInLeft animated delay-2s">CUỘC THI HOẠT ĐỘNG TĂNG CƯỜNG SỨC KHỎE DÀNH CHO SINH  VIÊN</div></div>
+                            </div>
+                            <div class="mySlides fade slide-pc">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="~/Content/image/image-pc/tuyen-sinh.jpg">
+                                <div class="text"><div class=" wow slideInLeft animated delay-2s">TUYỂN SINH NĂM 2019</div></div>
+                            </div>
+                            <div class="mySlides fade slide-pc">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="~/Content/image/image-pc/hoi-nghi.png">
+                                <div class="text"><div class=" wow slideInLeft animated delay-2s">HỘI NGHỊ TRIỂN KHAI NĂM HỌC 2019 - 2020</div></div>
+                            </div>
+                            <div class="mySlides fade slide-pc">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="~/Content/image/image-pc/school.png">
+                                <div class="text"><div class=" wow slideInLeft animated delay-2s ">SCHOOL OF MEDICINE</div></div>
+                            </div>
+                            <div class="mySlides fade slide-pc">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="~/Content/image/image-pc/sang-tao.png">
+                                <div class="text"><div class=" wow slideInLeft animated delay-2s">NĂNG ĐỘNG VÀ SÁNG TẠO</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content wrap-bg-blue">
+        @RenderBody()
+        <footer class="wrap-bg-blue">
+            <div class="wrap-footer bg-blue row wrap-footer-sp">
+                <div class="wrap-sp-ad-if flexbox">
+                    <div class="flexbox flex-column width-50">
+                        <div class="add-footer pd">
+                            <div class="title-ft">
+                                <span class="text f-style">Phát biểu</span>
+                                <div class="line-ft flexbox">
+                                    <div class="left-yello"></div>
+                                    <div class="right-yello"></div>
+                                </div>
+                            </div>
+                            <div class="footer-text wrap-banner-text">
+                                <div class="text-banner-infor p-relative" id="textslideAuto">
+                                    <div id="textslideFooter" class="p-absolute text"><span>"Đề cao tính độc lập, sáng tạo trong nghiên cứu khoa học."</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-footer pd">
+                            <div class="title-ft">
+                                <span class="text f-style">Địa chỉ</span>
+                                <div class="line-ft flexbox">
+                                    <div class="left-yello"></div>
+                                    <div class="right-yello"></div>
+                                </div>
+                            </div>
+                            <div class="des-add">
+                                <span class="f-style">School of Medicine</span>
+                                <div class="des-add-br f-style">
+                                    <span>Nhà Điều hành ĐHQG TP.HCM, P. Linh Trung, Q. Thủ Đức, TP.HCM. </span><br><br>
+                                    <span>ĐT: 08-37242160 – ext. 3111</span><br><br>
+                                    <span>Fax: 08-37242188</span><br><br>
+                                    <span>Gửi thông điệp: <a href="#" class="text-white underline link-form">Tại đây</a></span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-footer pd">
+                            <div class="title-ft">
+                                <span class="text f-style">Truy cập nhanh</span>
+                                <div class="line-ft flexbox">
+                                    <div class="left-yello"></div>
+                                    <div class="right-yello"></div>
+                                </div>
+                            </div>
+                            <ul class="list-ft">
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Tải bài giảng</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Thực tập lâm sàng</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Hỏi đáp tuyển sinh</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Câu hỏi thường gặp</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Tin nổi bật</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Phong cách SV y khoa</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Tin nổi bật</a>
+                                </li>
+                                <li class="item-ft">
+                                    <div class="line-hr line-hr-sm mt-30 mb-30"></div>
+                                    <a href="" class="f-style" style="font-size: 18px">Liên kết</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <select name="carlist" form="carform" class="select-option">
+                                        <option value="volvo">Các Trường, Viện</option>
+                                        <option value="saab">&nbsp;&nbsp;Trường ĐH Bách khoa</option>
+                                        <option value="opel">&nbsp;&nbsp;Trường ĐH KHTN</option>
+                                        <option value="audi">&nbsp;&nbsp;Trường ĐH KHXH & NV</option>
+                                        <option value="saab">&nbsp;&nbsp;Trường ĐH Công nghệ Thông tin </option>
+                                        <option value="saab">&nbsp;&nbsp;Viện MT-TN</option>
+                                        <option value="saab">&nbsp;&nbsp;Trường ĐH Kinh tế - Luật</option>
+                                        <option value="saab">&nbsp;&nbsp;Trường PT Năng Khiếu</option>
+                                        <option value="saab">Các Trung tâm</option>
+                                        <option value="saab">&nbsp;&nbsp;Khu CN Phần mềm</option>
+                                        <option value="saab">&nbsp;&nbsp;Thư viện Trung tâm</option>
+                                        <option value="saab">&nbsp;&nbsp;Trung tâm PT CNTT</option>
+                                        <option value="saab">&nbsp;&nbsp;Trung tâm ĐT Quốc tế </option>
+                                        <option value="saab">&nbsp;&nbsp;Trung tâm ngoại ngữ</option>
+                                        <option value="saab">&nbsp;&nbsp;Trung Tâm Khảo Thí</option>
+                                        <option value="saab">&nbsp;&nbsp;Trung tâm GD Quốc Phòng</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-footer pd doi-tac">
+                            <div class="title-ft dt">
+                                <span class="text f-style">Đối tác</span>
+                                <div class="line-ft flexbox">
+                                    <div class="left-yello"></div>
+                                    <div class="right-yello"></div>
+                                </div>
+                            </div>
+                            <button class="click-dt">Click Here</button>
+                            <ul class="list-ft list-dt">
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Từ Dũ</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Bình Dân</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Tâm Thần</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Nhi Đồng 1</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Thống Nhất</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Mắt TP.HCM</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Nhân Dân 115</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Da liễu</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Liên</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Phạm Ngọc Thạch</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Tai Mũi Họng TP.HCM</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">BV Răng Hàm Mặt TP.HCM</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">BV Bệnh Nhiệt Đới TP.HCM</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Truyền Máu và Huyết Học</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện NguyễnTri Phương</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Y học cổ truyền</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Quận Thủ Đức</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Đa khoa khu vực Thủ Đức</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Bệnh viện Hoàn Mỹ</a>
+                                </li>
+                                <li class="item-ft flexbox">
+                                    <span class="ic-arrow"><i class="right"></i></span>
+                                    <a href="" class="f-style">Viện Pasteur TP.HCM</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-hr line-hr-sm mt-30 mb-30"></div>
+                <div class="copyright flexbox copyright-sp">
+                    <ul class="icon-social flexbox">
+                        <li class="icon-border"><a href="#" class="fa fa-facebook"></a></li>
+                        <li class="icon-border"><a href="#" class="fa fa-youtube"></a></li>
+                        <li class="icon-border"><a href="#" class="fa fa-twitter"></a></li>
+                        <li class="icon-border"><a href="#" class="fa fa-rss"></a></li>
+                    </ul>
+                    <div class="text-copyright">
+                        <span class="text-white">© 2013-2014 Khoa Y ĐHQG TPHCM. Phát triển bởi Nguyễn Tuấn Kiệt - Nguyễn Dũng Trí.</span>
+                    </div>
+                </div>
+                <div class="copyright flexbox copyright-pc">
+                    <div class="text-copyright">
+                        <span class="text-white">© 2013-2014 Khoa Y ĐHQG TPHCM. Phát triển bởi Nguyễn Tuấn Kiệt - Nguyễn Dũng Trí.</span>
+                    </div>
+                    <ul class="icon-social flexbox">
+                        <li class="icon-border"><a href="#" class="fa fa-facebook"></a></li>
+                        <li class="icon-border"><a href="#" class="fa fa-youtube"></a></li>
+                        <li class="icon-border"><a href="#" class="fa fa-twitter"></a></li>
+                        <li class="icon-border"><a href="#" class="fa fa-rss"></a></li>
+                    </ul>
+                </div>
+                <div class="line-hr mt-30"></div>
+            </div>
+            <div class="wrap-chat wrap-bg-home" onclick="openForm()">
+                <div class="bg-gohome bg-chat"></div>
+                <div class="icon-gohome icon-chat"><i class="fa fa-comments"></i></div>
+            </div>
+            <div onclick="GoToHomePage()" class="wrap-bg-home">
+                <dive class="bg-gohome"></dive>
+                <div class="icon-gohome"><i class="fa fa-home"></i></div>
+            </div>
+            <!-- chatform -->
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1 class="title-form">Nhắn Tin cho chúng tôi</h1>
+
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                    <div class="two-button">
+                        <button type="submit" class="btn send">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script src="@Url.Content("~/Scripts/js/bannertext-foter.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/carousel.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/carousel-sp.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/chat-form.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/click-info-sv.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/des-show-hide-pc.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/des-show-hied-sp.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/footer-text.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/gohome.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/jquery.carouFredSel-6.2.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/new-click.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/open-menu-sp.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/slider-pc.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/slider-sp.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/text-image-sv.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/js/text-slide.js")" type="text/javascript"></script>
+    <script src="~/Scripts/js/login.js"></script>
+</body>
+</html>

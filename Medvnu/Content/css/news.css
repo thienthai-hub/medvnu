@@ -1,0 +1,130 @@
+.more {
+  display: none
+}
+.input-search {
+	width: 100%;
+	border: 2px solid lightgrey;
+	height: 35px;
+	margin-bottom: 20px;
+	padding-left: 10px
+	}
+.wrap-pagination {
+	justify-content: center;
+} 
+.pagination {
+  display: inline-block;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.myBtn {
+  color: #0048B6;
+  font-size: 12px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 200px; 
+  display:  flex
+}
+.myBtn:hover {
+  cursor: pointer;
+  color: #BD7100;
+}
+.pagination a.active {
+  background-color: #0048B6;
+  color: white;
+}
+.title-h1 {
+  font-size: 14px;
+  line-height: 1.3;
+  padding-top: 20px;
+  color: #0048B6;
+}
+.title-h1:hover {
+  color: #000;
+  cursor: pointer;
+}
+.des-new {
+  flex-direction: column;
+}
+.des-new-text {
+  line-height: 1.8;
+}
+.line-hr-sm {
+  margin-bottom: 0;
+}
+.copyright-sp {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    }
+.time {
+  font-size: 10px;
+  margin: 0px;
+}
+.pagination a:hover:not(.active) {background-color: #0048B6;
+  color: white
+}
+.des-new-sp {
+  text-align: justify;
+  line-height: 1.6;
+}
+.mb-30 {
+  margin-bottom: 30px;  
+}
+@media screen and (min-width: 1200px) { 
+.input-search {
+	width: 100%;
+	border: 2px solid lightgrey;
+	height: 35px;
+	margin-bottom: 20px;
+	padding-left: 10px
+	}
+.pagination {
+  display: inline-block;
+  margin-top: 50px;
+	}
+.des-new-img {
+  float: left;
+}
+.read-more {
+  color: blue;
+  font-size: 12px
+}
+.myBtn {
+  float: right;
+  width: 85px;
+}
+.des-new {
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #0048B6;
+	}
+
+.pagination a.active {
+  background-color: #0048B6;
+  color: white;
+  border: 1px solid #0048B6;
+	}
+
+.pagination a:hover:not(.active) {background-color: #0048B6;
+	}
+.wrap-services .bg-services::before {
+	height: 100%
+  }
+}

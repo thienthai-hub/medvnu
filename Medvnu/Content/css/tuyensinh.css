@@ -1,0 +1,22 @@
+﻿h2 {
+    text-align:center;
+    font-size:35px;
+}
+.wrap-ts {
+    background-color: white;
+    padding-bottom:50px;
+}
+.tuyen-sinh {
+    width: 40%;
+    margin: 0 auto;
+}
+@media (max-width:767px) {
+    .tuyen-sinh {
+        width: 100%;
+        margin: 0 auto;
+    }
+    h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+}
